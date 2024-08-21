@@ -584,6 +584,8 @@ img {
   outline: none;
   margin-bottom: var(--mb-4);
   background-color: #474747;
+  color: white;
+  caret-color: white;
 }
 
 .contact__button {
