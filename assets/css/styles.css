@@ -569,7 +569,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 2rem;
-  color: var(--first-color);
+  color: #ab89ff;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
