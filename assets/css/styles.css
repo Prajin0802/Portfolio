@@ -281,13 +281,11 @@ img {
   margin-top: 0px;
   -webkit-transform: rotate(-45deg);
   -webkit-animation: pencil 3s forwards;
-  animation: ease-in-out;
 }
 
 .container:hover {
   -webkit-transform: rotate(-45deg);
   -webkit-animation: pencil 3s forwards;
-  animation: ease-in-out;
 }
 
 .nib {
