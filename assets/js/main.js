@@ -111,3 +111,28 @@ window.addEventListener('click', function (event) {
         }
     });
 });
+
+$(document).ready(function () {
+    $("#form_submit").submit(function (e) {
+        e.preventDefault();
+
+        var formDataArray = $(this).serializeArray();
+        var formDataObj = {};
+        $.each(formDataArray, function (i, field) {
+            formDataObj[field.name] = field.value;
+        });
+
+        fetch("http://127.0.0.1:8000/emailer/", {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                name: formDataObj.name,
+                email: formDataObj.email,
+                message: formDataObj.message,
+            })
+        });
+    });
+});
