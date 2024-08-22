@@ -112,6 +112,25 @@ window.addEventListener('click', function (event) {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const pencilContainer = document.querySelector(".container");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                pencilContainer.style.animation = "pencil 3s ease-in-out";
+            } else {
+                pencilContainer.style.animation = "none";
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    observer.observe(pencilContainer);
+});
+
+
 $(document).ready(function () {
     $("#form_submit").submit(function (e) {
         e.preventDefault();
@@ -136,3 +155,4 @@ $(document).ready(function () {
         });
     });
 });
+
