@@ -369,7 +369,7 @@ $(document).ready(function () {
                 // Automatically close the modal after 3 seconds
                 setTimeout(function () {
                     modal.style.display = "none";
-                }, 3000);
+                }, 2000);
             }
         }).catch(error => {
             console.error('Error:', error);

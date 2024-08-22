@@ -467,6 +467,10 @@ img {
   transition: opacity 0.5s ease;
 }
 
+.modal.show {
+  display: block;
+}
+
 .modal-content {
   background-color: #182021;
   margin: 15% auto;
