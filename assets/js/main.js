@@ -156,3 +156,36 @@ $(document).ready(function () {
     });
 });
 
+$(document).ready(function () {
+    $("#form_submit").submit(function (e) {
+        e.preventDefault();
+
+        var formDataArray = $(this).serializeArray();
+        var formDataObj = {};
+        $.each(formDataArray, function (i, field) {
+            formDataObj[field.name] = field.value;
+        });
+
+        fetch("https://vilasmv.pythonanywhere.com/emailer/", {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                name: formDataObj.name,
+                email: formDataObj.email,
+                message: formDataObj.message,
+            })
+        }).then(response => {
+            if (response.ok) {
+                // Clear the form after successful submission
+                $("#form_submit")[0].reset();
+            }
+        }).catch(error => {
+            console.error('Error:', error);
+        });
+    });
+});
+
+
