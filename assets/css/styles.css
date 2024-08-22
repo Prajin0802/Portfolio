@@ -355,7 +355,7 @@ img {
   }
 
   100% {
-    -webkit-transform: rotateZ(-35deg);
+    -webkit-transform: rotateZ(45deg);
   }
 }
 
