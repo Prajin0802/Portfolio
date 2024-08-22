@@ -327,31 +327,31 @@ img {
 
 @-webkit-keyframes pencil {
   0% {
-    -webkit-transform: rotate(-45deg);
+    -webkit-transform: rotate(45deg);
   }
 
   40% {
-    -webkit-transform: rotate(25deg);
+    -webkit-transform: rotate(-25deg);
   }
 
   50% {
-    -webkit-transform: rotateZ(15deg);
+    -webkit-transform: rotateZ(-15deg);
   }
 
   60% {
-    -webkit-transform: rotateZ(25deg);
+    -webkit-transform: rotateZ(-25deg);
   }
 
   70% {
-    -webkit-transform: rotateZ(15deg);
+    -webkit-transform: rotateZ(-15deg);
   }
 
   80% {
-    -webkit-transform: rotateZ(25deg);
+    -webkit-transform: rotateZ(-25deg);
   }
 
   90% {
-    -webkit-transform: rotateZ(15deg);
+    -webkit-transform: rotateZ(-15deg);
   }
 
   100% {
