@@ -279,12 +279,12 @@ img {
   width: 40px;
   margin-left: 200px;
   margin-top: 0px;
-  -webkit-transform: rotate(-45deg);
+  -webkit-transform: rotate(45deg);
   -webkit-animation: pencil 3s forwards;
 }
 
 .container:hover {
-  -webkit-transform: rotate(-45deg);
+  -webkit-transform: rotate(45deg);
   -webkit-animation: pencil 3s forwards;
 }
 
