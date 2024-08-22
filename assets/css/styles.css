@@ -479,7 +479,7 @@ img {
   overflow: hidden;
   width: 80%;
   max-width: 800px;
-  max-height: 80vh;
+  max-height: 70vh;
   overflow-y: auto;
   opacity: 0;
   transform: translateY(-30px);
