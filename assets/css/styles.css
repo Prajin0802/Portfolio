@@ -561,12 +561,12 @@ img {
 }
 
 /* Visible modal with fade-in effect */
-.formalmodal.show {
+.formmodal.show {
   display: block;
   opacity: 1;
 }
 
-.formalmodal.show .modal-content {
+.formmodal.show .modal-content {
   opacity: 1;
   transform: translateY(0);
 }
