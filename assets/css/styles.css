@@ -473,12 +473,14 @@ img {
 
 .modal-content {
   background-color: #182021;
-  margin: 15% auto;
+  margin: 5% auto;
   padding: 20px;
   border-radius: 10px;
   overflow: hidden;
   width: 80%;
   max-width: 800px;
+  max-height: 80vh;
+  overflow-y: auto;
   opacity: 0;
   transform: translateY(-30px);
   transition: opacity 0.5s ease, transform 0.5s ease;
