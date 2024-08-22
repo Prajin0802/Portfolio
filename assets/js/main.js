@@ -134,11 +134,11 @@ $(document).ready(function () {
 
                 // Show the modal
                 var modal = document.getElementById("successModal");
-                modal.style.display = "block";
+                formmodal.style.display = "block";
 
                 // Automatically close the modal after 3 seconds
                 setTimeout(function () {
-                    modal.style.display = "none";
+                    formmodal.style.display = "none";
                 }, 2000);
             }
         }).catch(error => {
