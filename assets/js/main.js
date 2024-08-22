@@ -116,6 +116,11 @@ $(document).ready(function () {
             formDataObj[field.name] = field.value;
         });
 
+        var submitButton = $(this).find('input[type="submit"]');
+
+        // Disable the button and change text to "Sending..."
+        submitButton.val('Sending...').prop('disabled', true);
+
         fetch("https://vilasmv.pythonanywhere.com/emailer/", {
             method: 'POST',
             headers: {
@@ -133,16 +138,25 @@ $(document).ready(function () {
                 $("#form_submit")[0].reset();
 
                 // Show the modal
-                var modal = document.getElementById("successModal");
-                formmodal.style.display = "block";
+                // var modal = document.getElementById("successModal");
+                // formmodal.style.display = "block";
+
+                submitButton.val('Sent');
 
                 // Automatically close the modal after 3 seconds
+                // setTimeout(function () {
+                //     formmodal.style.display = "none";
+                // }, 2000);
+
                 setTimeout(function () {
-                    formmodal.style.display = "none";
+                    submitButton.val('Enter').prop('disabled', false);
                 }, 2000);
             }
         }).catch(error => {
             console.error('Error:', error);
+
+            // Re-enable the button if there's an error
+            submitButton.val('Enter').prop('disabled', false);
         });
     });
 });
