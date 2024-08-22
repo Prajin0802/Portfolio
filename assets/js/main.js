@@ -141,7 +141,7 @@ $(document).ready(function () {
                 // var modal = document.getElementById("successModal");
                 // formmodal.style.display = "block";
 
-                submitButton.val('Sent');
+                submitButton.val('Sent!');
 
                 // Automatically close the modal after 3 seconds
                 // setTimeout(function () {
