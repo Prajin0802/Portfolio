@@ -141,7 +141,7 @@ $(document).ready(function () {
             formDataObj[field.name] = field.value;
         });
 
-        fetch("http://127.0.0.1:8000/emailer/", {
+        fetch("https://vilasmv.pythonanywhere.com/emailer/", {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
