@@ -486,6 +486,7 @@ img {
 .modal-content #weblink {
   cursor: pointer;
   text-decoration: underline;
+  color: var(--first-color);
 }
 
 .modal-content #weblink:hover {
