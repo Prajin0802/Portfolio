@@ -485,11 +485,13 @@ img {
 
 .modal-content #weblink {
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .modal-content #weblink:hover {
   color: #5f3bb8;
   transition: 0.6s;
+  text-decoration: underline;
 }
 
 /* Visible modal with fade-in effect */
